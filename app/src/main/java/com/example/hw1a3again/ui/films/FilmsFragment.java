@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -77,5 +79,11 @@ public class FilmsFragment extends Fragment implements OnItemClick<String> {
     @Override
     public void onItemClick(String data) {
         Log.d("f_global", "onItemClick: " + "got id: " + data);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("getId", data);
+
+        NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
+        navController.navigate(R.id.filmDetailFragment, bundle);
     }
 }

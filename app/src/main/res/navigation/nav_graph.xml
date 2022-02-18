@@ -10,4 +10,9 @@
         android:name="com.example.hw1a3again.ui.films.FilmsFragment"
         android:label="fragment_films"
         tools:layout="@layout/fragment_films" />
+    <fragment
+        android:id="@+id/filmDetailFragment"
+        android:name="com.example.hw1a3again.ui.films_details.FilmDetailFragment"
+        android:label="fragment_film_detail"
+        tools:layout="@layout/fragment_film_detail" />
 </navigation>

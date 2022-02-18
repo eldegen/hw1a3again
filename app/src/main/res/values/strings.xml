@@ -4,4 +4,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_blank_item">Title blank</string>
     <string name="description_blank_item">Description blank</string>
+    <string name="title_japan_blank">Title Japan</string>
+    <string name="director_blank">Director:</string>
+    <string name="producer_blank">Producer:</string>
+    <string name="description_text">Description</string>
 </resources>
